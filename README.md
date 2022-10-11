@@ -3,7 +3,7 @@
 
 ## This application allows the user to post as you would in a social media application. The database will will save the unique ID of the user along with the username and post detials.
 
-###TODO: A few features I would like to add to this application would be: 
+TODO: A few features I would like to add to this application would be: 
 - creating a user login/logout page. This will store posts per user
 - allow the user to follow other users and comments on posts 
 - allo the user to view posts by certian users
