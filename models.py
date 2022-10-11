@@ -1,5 +1,6 @@
 from sqlite3 import Cursor
-import sqllite3
+import sqlite3 as sql
+from os import path
 
 ROOT = path.dirname(path.relpath((__file__)))
 
