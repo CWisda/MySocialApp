@@ -1,8 +1,10 @@
-from crypt import methods
-from pickle import GET
 from flask import Flask, render_template, request
+from flask_cors import CORS
+from models import create_post, get_posts
 
 app = Flask(__name__)
+
+CORS(app)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -15,4 +17,7 @@ def index():
 
         create_post(name, post)
 
-    return render_template('index.html')
+    posts = get_posts()
+
+
+    return render_template('index.html', posts=posts)
